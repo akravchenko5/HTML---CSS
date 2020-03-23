@@ -4,25 +4,33 @@
   box-sizing: border-box;
 }
 
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 .container {
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: justify; /* test along whole div, stretch text with spaces */
+  margin: 20px auto 0 auto; /*top, right, bottom, left*/
 }
 
 .div-1 {
   width: 75%;
-  background-color: red;
-  /* float allowing us to push element to the left or to the right */
+  /* float allowing us to push element to the left or to the right allowing other element to wrap around it */
   float: left;
+  padding-right: 30px;
+  padding-bottom: 20px;
 }
 
 .div-2 {
-  background-color: blue;
   width: 25%;
   float: left;
+  padding-bottom: 20px;
 }
 
 .div-3 {
-  background-color: green;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
