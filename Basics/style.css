@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.div-1 {
+  width: 75%;
+  background-color: red;
+  /* float allowing us to push element to the left or to the right */
+  float: left;
+}
+
+.div-2 {
+  background-color: blue;
+  width: 25%;
+  float: left;
+}
+
+.div-3 {
+  background-color: green;
+}
