@@ -1,0 +1,133 @@
+/* big tablets to 1200px (widths smaller that the 1140px row) */
+@media only screen and (max-width: 1200px) {
+  .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+  }
+  .row {
+    padding: 0 2%;
+  }
+}
+
+/* small tablets and big tablets 768-1023px */
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 18px;
+  }
+  section {
+    padding: 60px 0;
+  }
+  .long-copy {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .steps-box,
+  .steps-box:last-child {
+    margin-top: 10px;
+  }
+  .works-steps {
+    margin-bottom: 40px;
+  }
+  .works-steps:last-of-type {
+    margin-bottom: 60px;
+  }
+  .app-screen {
+    width: 50%;
+  }
+  .icon-small {
+    width: 17px;
+    margin-right: 5px;
+  }
+  .city-feature {
+    font-size: 80%;
+  }
+  .plan-box {
+    width: 100%;
+    margin-left: 0;
+  }
+  .plan-price {
+    font-size: 250%;
+  }
+  .contact-form {
+    width: 80%;
+  }
+}
+
+/* small phones and tablets 481-768px */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  section {
+    padding: 30 0;
+  }
+
+  .row,
+  .hero-text-box {
+    padding: 0 4%;
+  }
+
+  .col {
+    width: 100%;
+    margin: 0 0 4% 0;
+  }
+
+  .main-nav {
+    display: none;
+  }
+  h1 {
+    font-size: 180%;
+  }
+  h2 {
+    font-size: 150%;
+  }
+  .long-copy {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .works-steps {
+    margin-bottom: 20px;
+  }
+
+  .works-step:last-of-type {
+    margin-bottom: 40px;
+  }
+
+  .app-screen {
+    width: 40%;
+  }
+  .steps-box:first-child {
+    text-align: center;
+  }
+
+  .works-step div {
+    /* display: inline-block; */
+    height: 40px;
+    width: 40px;
+    padding: 8px;
+    float: left;
+    font-size: 120%;
+    margin-right: 15px;
+    border: 1px solid rgb(232, 88, 40);
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+  .footer-nav,
+  .social-links {
+    float: none;
+    text-align: center;
+  }
+}
+/* small phones 0-480px */
+@media only screen and (max-width: 480px) {
+  section {
+    padding: 25px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}
