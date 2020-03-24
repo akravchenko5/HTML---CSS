@@ -314,7 +314,7 @@ header {
 
 .works-step div {
   color: #e85828;
-  border: 2px solid #e85828;
+  border: 2px solid rgb(232, 88, 40);
   /* display: inline-block; */
   border-radius: 50%;
   height: 50px;
@@ -344,4 +344,47 @@ header {
 
 .city-feature {
   margin-bottom: 5px;
+}
+
+/*----------------------------------------------------*/
+/* TESTIMONIALS */
+/*----------------------------------------------------*/
+
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/back-customers.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  background-attachment: fixed;
+}
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+}
+
+blockquote::before {
+  content: '\201c';
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+cite {
+  margin-top: 25px;
+  font-size: 90%;
+  display: block;
+}
+
+cite img {
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+  border: 1px solid rgba(232, 88, 40);
 }
