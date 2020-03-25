@@ -3,12 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Omnifood" />
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="vendors/css/normalize.css" />
     <link rel="stylesheet" href="vendors/css/grid.css" />
     <link rel="stylesheet" href="resources/css/style.css" />
     <link rel="stylesheet" href="resources/css/queries.css" />
-    <link rel="stylesheet" href="vendors/css/animate.css">
+    <link rel="stylesheet" href="vendors/css/animate.css" />
+
+    <!-- faivcons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="resources/favicons/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="resources/favicons/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="resources/favicons/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="resources/favicons/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="resources/favicons/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="resources/favicons/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="resources/favicons/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="resources/favicons/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="resources/favicons/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="resources/favicons/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="resources/favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
 
     <title>Omnifood</title>
   </head>
@@ -237,21 +257,21 @@
           <blockquote>
             Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is
             a life-saver. Now that I got used to it, I couldn't live without my daily meals!
-            <cite><img src="resources/img/customer-1.jpg" /> Alberto Duncan</cite>
+            <cite><img src="resources/img/customer-1.jpg" alt="first customer image" /> Alberto Duncan</cite>
           </blockquote>
         </div>
         <div class="col span-1-of-3">
           <blockquote>
             Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here
             in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
-            <cite><img src="resources/img/customer-2.jpg" /> Joana Silva</cite>
+            <cite><img src="resources/img/customer-2.jpg" alt="second customer image" /> Joana Silva</cite>
           </blockquote>
         </div>
         <div class="col span-1-of-3">
           <blockquote>
             I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up
             with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
-            <cite><img src="resources/img/customer-3.jpg" /> Milton Chapman</cite>
+            <cite><img src="resources/img/customer-3.jpg" alt="third customer image" /> Milton Chapman</cite>
           </blockquote>
         </div>
       </div>
@@ -338,7 +358,7 @@
               <label for="name">Name</label>
             </div>
             <div class="col span-2-of-3">
-              <input type="text" name="name" id="name" placeholder="Your name..." required autocomplete="off"/>
+              <input type="text" name="name" id="name" placeholder="Your name..." required autocomplete="off" />
             </div>
           </div>
 
@@ -347,7 +367,14 @@
               <label for="email">Email</label>
             </div>
             <div class="col span-2-of-3">
-              <input type="email" name="email" id="email" placeholder="Your email address..." required autocomplete="off"/>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email address..."
+                required
+                autocomplete="off"
+              />
             </div>
           </div>
 
@@ -377,17 +404,24 @@
               <label for="message">Drop us a line</label>
             </div>
             <div class="col span-2-of-3">
-              <textarea name="message" id="message" cols="30" rows="3" placeholder="Your message..." autocomplete="off"></textarea>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="3"
+                placeholder="Your message..."
+                autocomplete="off"
+              ></textarea>
+            </div>
           </div>
-
           <div class="row">
             <div class="col span-1-of-3">
               <label>&nbsp;</label>
             </div>
             <div class="col span-2-of-3">
-              <input type="submit" value="Send it!">
+              <input type="submit" value="Send it!" />
+            </div>
           </div>
-
         </form>
       </div>
     </section>
@@ -405,23 +439,34 @@
         </div>
         <div class="col span-1-of-2">
           <ul class="social-links">
-            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-google"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li>
+              <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            </li>
+            <li>
+              <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            </li>
+            <li>
+              <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+            </li>
+            <li>
+              <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            </li>
           </ul>
         </div>
       </div>
-      <div class="row"></div>
+      <div class="row">
         <p>
           Copyright &copy; 2020 by Omnifood. All rights reserved.
         </p>
       </div>
     </footer>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
     <script src="vendors/js/jquery.waypoints.min.js"></script>
     <script src="resources/js/script.js"></script>
   </body>
 </html>
-
