@@ -205,9 +205,20 @@ header {
 
 .logo {
   height: 100px;
+  width: auto;
+  float: left;
   margin-top: 20px;
 }
 
+.logo-black {
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 5px 0;
+}
+
+/* main-nav*/
 .main-nav {
   float: right;
   list-style: none;
@@ -235,6 +246,38 @@ header {
   border-bottom: 2px solid #e85828;
 }
 
+/*sticky nav*/
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.98);
+  z-index: 1;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.sticky .main-nav {
+  margin-top: 5px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  color: #555555;
+  padding: 16px 0;
+}
+
+.sticky .logo {
+  display: none;
+}
+.sticky .logo-black {
+  display: block;
+}
+
+.sticky .main-nav li {
+  margin-top: 15px;
+}
 /*----------------------------------------------------*/
 /* FEATURES */
 /*----------------------------------------------------*/
