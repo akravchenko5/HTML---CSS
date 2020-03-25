@@ -8,20 +8,21 @@
     <link rel="stylesheet" href="vendors/css/grid.css" />
     <link rel="stylesheet" href="resources/css/style.css" />
     <link rel="stylesheet" href="resources/css/queries.css" />
+    <link rel="stylesheet" href="vendors/css/animate.css">
 
     <title>Omnifood</title>
   </head>
   <body>
     <header>
-      <nav class="sticky">
+      <nav>
         <div class="row">
           <img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo" />
           <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black" />
           <ul class="main-nav">
-            <li><a href="">Food delivery</a></li>
-            <li><a href="">How it works</a></li>
-            <li><a href="">Our cities</a></li>
-            <li><a href="">Sign up</a></li>
+            <li><a href="#meals">Food delivery</a></li>
+            <li><a href="#steps">How it works</a></li>
+            <li><a href="#cities">Our cities</a></li>
+            <li><a href="#section_form">Sign up</a></li>
           </ul>
         </div>
       </nav>
@@ -30,12 +31,12 @@
           Goodbye junk food.<br />
           Hello super healthy meals.
         </h1>
-        <a href="#" class="btn btn-full">I’m hungry</a>
-        <a href="#" class="btn btn-ghost">Show me more</a>
+        <a href="#" class="btn btn-full js--scroll-to-plan">I’m hungry</a>
+        <a href="#" class="btn btn-ghost js--scroll-to-start">Show me more</a>
       </div>
     </header>
 
-    <section class="section-features">
+    <section class="section-features js--section-features">
       <div class="row">
         <h2>Get food fast &mdash; not fast food.</h2>
         <p class="long-copy">
@@ -43,7 +44,7 @@
           cooking. So let us take care of that, we’re really good at it, we promise!
         </p>
       </div>
-      <div class="row">
+      <div class="row js--wp-1">
         <div class="col span-1-of-4 box">
           <ion-icon name="infinite-outline" class="icon-big"></ion-icon>
           <h3>Up to 365 days/year</h3>
@@ -79,7 +80,7 @@
       </div>
     </section>
 
-    <section class="section-meals">
+    <section class="section-meals" id="meals">
       <ul class="meals-showcase clearfix">
         <li>
           <figure class="meal-photo">
@@ -126,12 +127,12 @@
       </ul>
     </section>
 
-    <section class="section-steps">
+    <section class="section-steps" id="steps">
       <div class="row">
         <h2>How it works &mdash; Simple as 1, 2, 3</h2>
       </div>
       <div class="row">
-        <div class="col span-1-of-2 steps-box">
+        <div class="col span-1-of-2 steps-box js--wp-2">
           <img src="resources/img/app-iPhone.png" alt="iPhone picture" class="app-screen" />
         </div>
         <div class="col span-1-of-2 steps-box">
@@ -154,11 +155,11 @@
       </div>
     </section>
 
-    <section class="section-cities">
+    <section class="section-cities" id="cities">
       <div class="row">
         <h2>We're currently in these cities</h2>
       </div>
-      <div class="row">
+      <div class="row js--wp-3">
         <div class="col span-1-of-4 box">
           <img src="resources/img/lisbon-3.jpg" alt="Omnifood Lisbon" />
           <h3>Lisbon</h3>
@@ -255,7 +256,7 @@
       </div>
     </section>
 
-    <section class="section-plans">
+    <section class="section-plans js--section-plans">
       <div class="row">
         <h2>Start eating healthy today</h2>
       </div>
@@ -325,7 +326,7 @@
       </div>
     </section>
 
-    <section class="section-form">
+    <section class="section-form" id="section_form">
       <div class="row">
         <h2>We're happy to hear from you</h2>
       </div>
@@ -410,7 +411,7 @@
           </ul>
         </div>
       </div>
-      <div class="row">
+      <div class="row"></div>
         <p>
           Copyright &copy; 2020 by Omnifood. All rights reserved.
         </p>
@@ -418,6 +419,7 @@
     </footer>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
     <script src="resources/js/script.js"></script>
   </body>
 </html>

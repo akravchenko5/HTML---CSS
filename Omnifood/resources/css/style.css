@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   color: #555555;
@@ -265,7 +269,7 @@ header {
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
   color: #555555;
-  padding: 16px 0;
+  padding: 15px 0;
 }
 
 .sticky .logo {
@@ -588,3 +592,16 @@ footer p {
 .social-links li {
   font-size: 150%;
 }
+
+/*----------------------------------------------------*/
+/* ANIMATIONS */
+/*----------------------------------------------------*/
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+  opacity: 0;
+}
+
+/* .js--wp-1.animated {
+  opacity: 1;
+} */
