@@ -226,12 +226,12 @@ header {
 .main-nav {
   float: right;
   list-style: none;
+  margin-top: 55px;
 }
 
 .main-nav li {
   display: inline-block;
   margin-left: 40px;
-  margin-top: 55px;
 }
 
 .main-nav li a:link,
@@ -250,6 +250,17 @@ header {
   border-bottom: 2px solid #e85828;
 }
 
+/* mobile nav */
+
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+  color: white;
+  font-size: 200%;
+}
+
 /*sticky nav*/
 
 .sticky {
@@ -263,7 +274,7 @@ header {
 }
 
 .sticky .main-nav {
-  margin-top: 5px;
+  margin-top: 18px;
 }
 
 .sticky .main-nav li a:link,
@@ -277,10 +288,6 @@ header {
 }
 .sticky .logo-black {
   display: block;
-}
-
-.sticky .main-nav li {
-  margin-top: 15px;
 }
 /*----------------------------------------------------*/
 /* FEATURES */

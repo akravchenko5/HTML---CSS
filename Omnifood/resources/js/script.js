@@ -58,4 +58,32 @@ $(document).ready(function() {
       offset: '50%'
     }
   );
+
+  // MOBILE NAVIGATION
+  $('.js--nav-icon').click(function() {
+    var nav = $('.js--main-nav');
+    var icon = $(this)
+      .children('ion-icon')
+      .attr('name');
+
+    nav.slideToggle(200);
+
+    if (icon == 'menu') {
+      $('.js--nav-icon')
+        .children('ion-icon')
+        .attr('name', 'close');
+    } else {
+      $('.js--nav-icon')
+        .children('ion-icon')
+        .attr('name', 'menu');
+    }
+  });
+
+  $(window).resize(function() {
+    if ($(window).width() > 767) {
+      $('ul').css('display', 'inline-block');
+    } else {
+      $('ul').css('display', 'none');
+    }
+  });
 });
